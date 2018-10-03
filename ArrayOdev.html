@@ -54,12 +54,23 @@ function reportA(str) {
     outA.innerText = "a = [ "+ a.join(", ")+" ] "+a.length;
     console.log(str);
 }
+function reportB(str) {
+    outB.innerText = "b = [ "+ b.join(", ")+" ] "+b.length;
+    console.log(str);
+}
+function birles(){
+	var my = a.concat(b);
+	console.log(my);
+}
+
 </script>
 
 <body>
 <h2 id=title></h2>
-
+<h3 id=title2></h3>
 <p id=outA></p>
+<p id=outB></p>
+
 <p>
 i = <input type=number id=ie value=1  style="width:40px"> &emsp; 
 x = <input type=text   id=xe value=53 style="width:99px"> 
@@ -72,6 +83,7 @@ x = <input type=text   id=xe value=53 style="width:99px">
 <input type=button  value="sırala" onClick="Sıralama()">
 <input type=button  value="toplam" onClick="toplama()">
 <input type=button  value="max" onClick="maxBul()">
+<input type=button  value="birles" onClick="birles()">
 </p>
 
 <hr />
@@ -84,8 +96,10 @@ x = <input type=text   id=xe value=53 style="width:99px">
 <script>
     title.innerText = document.title;
     const a = [234, "abc", "son"];  //initially
+    const b = [234, "abc", "son"];
     reportA("start");
-
+    title2.innerText = document.title2;
+    reportB("start");
 
 
 </script>
