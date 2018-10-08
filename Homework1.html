@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Add Course</title>
+</head>
+
+<script>
+
+
+function add() {
+    let x = xe.value; 
+    let y = parseInt(ye.value,10);
+    let z = parseInt(ze.value,10);
+  
+
+  	a.push(x,y,z);
+
+    reportA("push "+x);
+    reportA("push "+y);
+    reportA("push "+z);
+	
+
+	sayac +=3;
+
+}
+function reportA(str) {
+    outA.innerText = "a = [ "+ a.join(", ")+" ] "+a.length;
+    console.log(str);
+}
+
+
+
+function reportB(str) {
+outB.innerText ="\n"
+	for (var i = 0; i < a.length; i++) {
+		if(i%3==0)
+			outB.innerText +="\n"
+
+		outB.innerHTML += a[i].toString()+"\t               ";
+		outB.innerHTML += ""
+
+
+
+	}
+
+}
+function dersIsmi(){
+	for (var i = 0; i < a.length; i++) {
+		if (typeof a[i] === "string") {
+			ders = a[i].toString();
+		}
+	
+	}
+
+}
+function maxBul(){
+
+var max=0;	
+for (var i = 0; i < a.length; i++) {
+
+	
+	if (typeof a[i] === "string") {
+			ders = a[i];
+			avg1 = (a[i+1]+a[i+2])/2 ;
+
+	if(avg1 > max ){
+		max = avg1 ;
+
+	}
+}
+
+outC.innerText =ders+" " + max;
+}
+
+console.log(Math.max(a));
+}
+
+function avg(){
+var avg=0;
+outD.innerText=""
+for (var i = 0; i < a.length; i++) {
+		if (typeof a[i] === "string") {
+			ders = a[i];
+		avg = (a[i+1]+a[i+2])/2 ;
+
+		outD.innerText += ders + "\t"+ avg.toString()+"\n" ;
+		}
+	
+	}
+
+
+}
+
+</script>
+
+<body>
+<h2 id=title></h2>
+
+<p id=outA></p>
+<p>
+
+Name = <input type=text   id=xe value="" style="width:99px"> 
+
+</p>
+<p>
+MidTerm = <input type=number   id=ye value="" style="width:99px"> 	
+</p>
+<p>
+	
+Final = <input type=number   id=ze value="" style="width:99px"> 
+</p>
+
+
+
+
+<p>
+
+<input type=button value="add"  	onClick="add()">
+<input type=button value="print"   onClick="reportB()">
+<input type=button value="max"   onClick="maxBul()">
+<input type=button value="avg"   onClick="avg()">
+</p>
+
+<hr />
+<p>Print</p>
+<p>Ders       midterm         final</p>
+<script>
+    title.innerText = document.title;
+    var a = [];  //initially
+   // var array =["bp1",10,55];
+    reportA("start");
+    var sayac = 0;
+    var ders;
+</script>
+<h3 id=title2></h3>
+<p id=outB></p>
+
+<p>Ders       max</p>
+
+<p id=outC></p>
+
+<p>Ders       Avg</p>
+
+<p id=outD></p>
+
+
+</body>
+</html>
