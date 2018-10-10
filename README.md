@@ -5,4 +5,4 @@ Ileri_Programlama
 
 2.[homework 1](https://github.io/ahmetihsansavas/Ileri_Programlama/blob/master/Homework1.html)
 
-3.[classwork 2](https://github.io/ahmetihsansavas/Ileri_Programlama/blob/master/ArrayOdev.html)
+3.[classwork 2](https://ahmetihsansavas.github.io/Ileri_Programlama/ArrayOdev.html)
