@@ -1,4 +1,8 @@
 Ileri_Programlama
 
 
-1.[sayac](https://github.com/ahmetihsansavas/Ileri_Programlama/blob/master/Empty%20page.html)
+1.[sayac](https://ahmetihsansavas.github.io/Ileri_Programlama/Empty%20page.html)
+
+2.[homework 1](https://ahmetihsansavas.github.io/Ileri_Programlama/Homework1.html)
+
+3.[classwork 2](https://ahmetihsansavas.github.io/Ileri_Programlama/ArrayOdev.html)
