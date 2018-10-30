@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+	 Database
+	</title>
+
+ <script src="Database.js"></script>
+<script>
+
+	//const url = "https://maeyler.github.io/JS/data/";
+
+</script>
+
+<h1>Database</h1>
+
+<p>Student id: 
+<input type=number onChange="MENU.showStd(value)">
+</p>
+
+<p>GPA : 
+<input type=number onChange="MENU.AboveGpa(value)">
+</p>
+<p>Course id: <input type=text onChange="MENU.studentsIn(value)">
+</p>
+<p>Room: <input type=text onChange="MENU.givenRoom(value)">
+</p>
+<button onClick='MENU.randomStd()'>Random</button>
+<button onClick='MENU.findBest()'>Best GPA</button>
+<button onClick='out.innerText=""'>Clear</button>
+<button onClick=''>Exam</button>
+
+</head>
+<body>	
+	<p id=out onClick='doClick(event)'>Result:</p>
+<script type="text/javascript">
+	
+
+var MENU = new Database("Students.txt","Courses.txt");
+  MENU.readStdData("Students.txt");
+    MENU.readCrsData("Courses.txt");
+
+</script>
+
+</body>
+</html>
