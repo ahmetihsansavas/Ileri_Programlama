@@ -18,3 +18,5 @@ Ileri_Programlama
 8.[cw6](https://ahmetihsansavas.github.io/Ileri_Programlama/cw6.html)
 
 9.[homework3](https://ahmetihsansavas.github.io/Ileri_Programlama/hw3/man.html)
+
+10.[cw7](https://ahmetihsansavas.github.io/Ileri_Programlama/cw7.html)
