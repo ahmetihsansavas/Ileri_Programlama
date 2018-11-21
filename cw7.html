@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TABLE..</title>
+    <table id="table" border="1">
+             <tr>
+                <th>Brand</th>
+                <th>Place</th>
+                <th>birth</th>
+            </tr>
+    </table>
+
+<style>
+table, td, th {    
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    padding: 15px;
+}
+</style>
+
+
+    <script type="text/javascript">
+
+table = document.getElementById("table");
+function makeRows(myArray) {
+ for(var i = 0; i < myArray.length; i++)
+           {
+           var newRow = table.insertRow(table.length);
+               for(var j = 0; j < myArray[i].length; j++)
+               {
+                   var cell = newRow.insertCell(j);
+                   cell.innerHTML = myArray[i][j];
+               }
+           }
+}
+ 
+
+    </script>
+</head>
+<body>
+	<script type="text/javascript">
+		 var array = [["Mercedes","Germany","1900"],
+                         ["BMW","Germany","1918"],
+                         ["Renault","france","1887"],
+                         ["Ferrari","Italy","1900"],
+                         ["Bugatti","Italy","1924"],
+                         ["Citroen","france","1935"],
+                         ["Volkswagen","Germany","1925"],
+                         ["Audi","Germany","1956"],
+                         ["Fiat","Italy","1887"],
+                         ["Nissan","japan","1889"]];
+const cars = [
+    {name: "Mercedes", birth: 1900, place: "Germany"},
+    {name: "BMW", birth: 1950, place: "Germany"},
+    {name: "Renault", birth: 1879, place: "france"},
+    {name: "Ferrari", birth: 1926, place: "Italy"},
+    {name: "Bugatti", birth: 1934, place: "Italy"},
+    {name: "Citroen", birth: 1935, place: "france"},
+    {name: "Volkswagen", birth: 1900, place: "Germany"}
+  ];
+
+makeRows(array);
+
+
+	</script>
+
+</body>
+</html>
