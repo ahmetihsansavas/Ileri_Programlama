@@ -19,4 +19,4 @@ Ileri_Programlama
 
 9.[homework3](https://ahmetihsansavas.github.io/Ileri_Programlama/hw3/man.html)
 
-10.[cw7](https://ahmetihsansavas.github.io/Ileri_Programlama/cw7.html)
+10.[cw7](https://ahmetihsansavas.github.io/Ileri_Programlama/cw7/cw7.html)
