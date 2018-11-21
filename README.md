@@ -11,7 +11,7 @@ Ileri_Programlama
 
 5.[cw3 c4_Data](https://ahmetihsansavas.github.io/Ileri_Programlama/c4_data.html)
 
-6.[cw4index](https://ahmetihsansavas.github.io/Ileri_Programlama/index.html)
+6.[cw4index](https://ahmetihsansavas.github.io/Ileri_Programlama/cw4index.html)
 
 7.[cw5](https://ahmetihsansavas.github.io/Ileri_Programlama/cw5.html)
 
