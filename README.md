@@ -1,6 +1,6 @@
-Ileri_Programlama
+#Ileri_Programlama
 
-Classworks
+##Classworks
 
 1.[sayac](https://ahmetihsansavas.github.io/Ileri_Programlama/Empty%20page.html)
 
@@ -18,7 +18,7 @@ Classworks
 
 7.[cw7](https://ahmetihsansavas.github.io/Ileri_Programlama/cw7/cw7.html)
 
-Homeworks
+##Homeworks
 
 1.[homework 1](https://ahmetihsansavas.github.io/Ileri_Programlama/Homework1.html)
 
