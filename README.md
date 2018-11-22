@@ -22,6 +22,6 @@ Homeworks
 
 1.[homework 1](https://ahmetihsansavas.github.io/Ileri_Programlama/Homework1.html)
 
-
+3.[homework2](https://ahmetihsansavas.github.io/Ileri_Programlama/HW2/odev.html)
 
 3.[homework3](https://ahmetihsansavas.github.io/Ileri_Programlama/hw3/man.html)
