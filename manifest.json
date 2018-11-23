@@ -1,0 +1,14 @@
+{
+  "name": "Ahmet İhsan JS ",
+  "start_url": "/Ileri_Programlama/cw7/index.html",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#0f4a73",
+  "icons": [
+    {
+      "src": "aslan.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ]
+}
