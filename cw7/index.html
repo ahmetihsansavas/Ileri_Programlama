@@ -4,6 +4,14 @@
 <head>
 	<title></title>
 <link rel="manifest" href="manifest.json">
+<script type="text/javascript">
+	if ('serviceWorker' in navigator) {
+          navigator.serviceWorker
+            .register('sw.js')
+            .then((reg) => { console.log('SW Registered', reg) })
+            .catch(console.log)
+        }
+</script>
 </head>
 <body>
 <a href="https://ahmetihsansavas.github.io/Ileri_Programlama/cw7/cw7.html">CW 7</a><br>
