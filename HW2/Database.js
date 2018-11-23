@@ -1,5 +1,5 @@
 
-
+arr=[]
 const stuMap = new Map();
 const crsMap = new Map();
 const url = "https://maeyler.github.io/JS/data/";
@@ -121,10 +121,10 @@ class Database{
     for (let s of a) {     
       //let std = new Student(std=>parseStudent(s)).toString();
      
-      
+    
     let std = parseStudent(s);
     stuMap.set(std.id,std);
-
+    arr.push(std.id)
      
     //console.log(std.id+" "+std);
     }
@@ -187,6 +187,7 @@ studentsIn(code) {
   let value = Array.from(stuMap.keys());
     let x =items[Math.floor(Math.random() * items.length)];  
     console.log(x);
+
     report("Random  :" + stuMap.get(x));
    // let b = stuMap.get(ab);
 //report("Random: "+stuMap.get(i));
@@ -195,7 +196,7 @@ studentsIn(code) {
     //return keys[Math.floor(Math.random()*keys.length)];
 //let items = Array.from(stuMap);
 //return items[Math.floor(Math.random() * items.length)];
-
+    return x;
 }
  AboveGpa(value) {      
 var iterator1 = stuMap.values();
