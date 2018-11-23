@@ -5,8 +5,8 @@
   "background_color": "cyan",
   "icons": [
     {
-      "src": "fb.png",
-      "sizes": "298×300",
+      "src": "JS.png",
+      "sizes": "192x192",
       "type": "image/png"
     }
   ]
