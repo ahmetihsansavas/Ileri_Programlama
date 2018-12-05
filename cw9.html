@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>SVG .... </title>
+
+  <style>
+    svg, canvas {
+        background: cyan;
+        font: 10px arial, sans-serif;
+    }
+  </style>
+</head>
+
+<body>
+
+<h2>Using SVG</h2>
+<svg id='svg' width='540' height='100'>
+  <circle id='crc' cx='50' cy='50' r='40'
+  style='fill:yellow;stroke:blue;stroke-width:4' />
+  <text id='text1' x='35' y='55' fill='black'>Circle</text>
+  <rect id='rc1' x='110' y='10' width='100' height='80'
+  style='fill:pink;stroke:red;stroke-width:5' />
+  <text id='text2' x='145' y='55' fill='blue'>Rect</text>
+    <rect id='rc2' x='310' y='10' width='100' height='80'
+  style='fill:yellow;stroke:red;stroke-width:5' />
+  <text id='text3' x='330' y='55' fill='blue'>Rect 2</text>
+</svg>
+<p>SVG elements are controllable and scalable</p>
+<label for="colorWell">Color:</label>
+<input onChange="processdata()" type="color" value="#ff0000" id="colorWell">
+<label for="colorStroke"> Stroke :</label>
+<input onChange="processStroke()" type="color" value="#ff0000" id="colorStroke">
+<h2>Yer degistirme</h2>
+<p>circle : 
+<input type=number onChange="tasıma(crc,value)">
+</p>
+<p>rect 1 : 
+<input type=number onChange="tasıma2(rc1,value)">
+</p>
+<p>rect 2: 
+<input type=number onChange="tasıma2(rc2,value)">
+</p>
+<button onClick="crc.animate(t1, 5000)">circle translate</button>
+<button onClick="boyBüyütme(crc)">circle++</button>
+<button onClick="boykucultme(crc)">circle--</button>
+<h3>Ad degistirme</h3>
+<p>circle : 
+<input type=text onChange="textdegistir(text1,value)">
+</p>
+<p>rect 1 : 
+<input type=text onChange="textdegistir(text2,value)">
+</p>
+<p>rect 2: 
+<input type=text onChange="textdegistir(text3,value)">
+</p>
+<hr />
+
+
+
+<hr />
+
+<p>Ref: <i>Eloquent JavaScript</i>,
+<a href="http://eloquentjavascript.net/17_canvas.html" 
+   target="ExternalDocument"> Chap 17</a>
+</p>
+
+<script>
+
+  const 
+  t1 = { transform: ["translateX(0)", "translateX(500px)", "translateX(0)"] }
+"use strict";
+var colorWell;
+var defaultColor = "#0000ff";
+
+window.addEventListener("load", startup, false);
+function textdegistir(nesne,value){
+  this.nesne=nesne;
+  this.value=value;
+  nesne.textContent=value;
+}
+function processdata(){
+var circle11=document.getElementById('crc');
+var rect1=document.getElementById('rc1');
+var rect2=document.getElementById('rc2');
+var cv1 = document.getElementById('colorWell').value;
+circle11.style.fill=cv1;
+rect2.style.fill=cv1;
+rect1.style.fill=cv1;
+}
+function processStroke(){
+var circle11=document.getElementById('crc');
+var rect1=document.getElementById('rc1');
+var rect2=document.getElementById('rc2');
+var cv1 = document.getElementById('colorStroke').value;
+circle11.style.stroke=cv1;
+rect2.style.stroke=cv1;
+rect1.style.stroke=cv1;
+}
+
+
+
+function startup() {
+  colorWell = document.getElementById('colorWell');
+  colorWell.value = defaultColor;
+
+  colorWell.addEventListener("crc", updateFirst, false);
+  colorWell.addEventListener("crc", updateAll, false);
+  colorWell.select();
+}
+function updateFirst(event) {
+  var p = document.getElementById('crc');
+
+  if (p) {
+    p.style.fill = colorWell.value;
+  }
+}function updateAll(event) {
+  document.getElementById('crc').forEach(function(p) {
+    p.style.fill = event.target.value;
+  });
+}
+
+function tasıma(xx,v){
+  this.v=v;
+  this.xx=xx;
+  xx.cx.baseVal.value=v;
+
+}
+function tasıma2(xx,v){
+  this.v=v;
+  this.xx=xx;
+  xx.x.baseVal.value=v;
+
+}
+
+function boyBüyütme(nesne){
+  this.nesne=nesne;
+  nesne.r.baseVal.value=nesne.r.baseVal.value*1.5;
+}
+function boykucultme(nesne){
+  this.nesne=nesne;
+  nesne.r.baseVal.value=nesne.r.baseVal.value*0.5;
+
+}
+
+
+
+
+</script>
+
+</body>
+</html>
