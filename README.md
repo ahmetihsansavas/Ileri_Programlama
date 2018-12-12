@@ -27,3 +27,7 @@
 2.[homework2](https://ahmetihsansavas.github.io/Ileri_Programlama/HW2/odev.html)
 
 3.[homework3](https://ahmetihsansavas.github.io/Ileri_Programlama/hw3/man.html)
+
+## MidtermProject
+
+1.[midtermproject 1](https://ahmetihsansavas.github.io/Ileri_Programlama/midproject.html)
