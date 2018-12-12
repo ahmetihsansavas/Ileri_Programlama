@@ -2,7 +2,7 @@
   "name": "Ahmet İhsan JS ",
   "start_url": "/Ileri_Programlama/index.html",
   "display": "standalone",
-  "background_color": "#000000",
+  "background_color": "white",
   "theme_color": "#0f4a73",
   "icons": [
     {
