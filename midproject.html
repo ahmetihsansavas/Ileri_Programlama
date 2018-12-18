@@ -81,6 +81,7 @@ function sqrt(form) {
 		window.alert("you broke it!!!");
 		document.getElementById('girdi').value="0";
 		document.getElementById('cevap').value="";
+		window.navigator.vibrate([100,30,100,30,100,30,200,30,200,30,200,30,100,30,100,30,100]);
 	}
 
 	function sayı(num){
@@ -259,7 +260,10 @@ function cos() {
 function tan() {
 	var input =document.getElementById('girdi');
 	var output =document.getElementById('cevap');
-	output.value = Math.tan(input.value);
+	var deger = input.value;
+	output.value = Math.tan(input.value)
+
+	
 	var sonuc = output.value;
 	output.animate(t3,39000);	
 
