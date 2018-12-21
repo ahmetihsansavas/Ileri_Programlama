@@ -79,7 +79,7 @@ function sqrt(form) {
 
 
 	function ekranSıfırlama(){
-		window.alert("you broke it!!!");
+		//window.alert("you broke it!!!");
 		document.getElementById('girdi').value="0";
 		document.getElementById('cevap').value="";
 		window.navigator.vibrate([100,30,100,30,100,30,200,30,200,30,200,30,100,30,100,30,100]);
@@ -326,11 +326,15 @@ function sqrt() {
 		break;
 	
 	}
+	if (deger=="") {
+		deger="hata";
+		break;
+	}
+
 	}
 	
 
 	
-
 
 }
 function square() {
@@ -477,15 +481,19 @@ const t2 = { transform: ["rotate(0)", "rotate(180deg)"] };
 </table>
 
 
-<p style="font-size:20px">Ref: 
-<a href="https://www.w3schools.com/tags/ref_av_dom.asp" 
-   target="ExternalDocument" style="color:yellow;font-size: 20px">Audio ,</a> <br>
-<a href="https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_pi" 
-   target="ExternalDocument" style="color:yellow;font-size: 20px">Symbols ,</a>
+<p style="font-size:20px;color:white">Ref: 
+	<a href="https://www.w3schools.com/tags/ref_av_dom.asp" 
+   target="ExternalDocument" style="color:white;font-size: 20px">Audio ,</a> <br>
+	<a href="https://www.w3schools.com/html/html_symbols.asp" 
+   target="ExternalDocument" style="color:white;font-size: 20px">Symbols ,</a> <br>
    <a href="https://developer.mozilla.org/en-US/docs/Web/API/Navigator/vibrate" 
-   target="ExternalDocument" style="color:yellow;font-size: 20px">Vibrate ,</a>
-     <a href="https://maeyler.github.io/JS/simple/CSS%20Animation.html" 
-   target="ExternalDocument" style="color:yellow;font-size: 20px">Animation</a>
+   target="ExternalDocument" style="color:white;font-size: 20px">Vibrate ,</a> <br>
+    <a href="https://maeyler.github.io/JS/simple/CSS%20Animation.html" 
+   target="ExternalDocument" style="color:white;font-size: 20px">Animation ,</a> <br>    
+   <a href="https://maeyler.github.io/JS/simple/CSS%20Animation.html" 
+   target="ExternalDocument" style="color:white;font-size: 20px">Math Object</a> <br>
+    <a href="https://www.youtube.com/watch?v=TX30jTaPs28" 
+   target="ExternalDocument" style="color:white;font-size: 20px">Simple Structure</a> 
 </p>
 
 
