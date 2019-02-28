@@ -31,3 +31,9 @@
 ## MidtermProject
 
 1.[Calculator](https://ahmetihsansavas.github.io/Ileri_Programlama/midproject.html)
+
+## Links
+
+1.[github](https://github.com/ahmetihsansavas/Ileri_Programlama)
+
+2.[Autoama](https://ahmetihsansavas.github.io/otomata/)
