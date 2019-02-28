@@ -36,4 +36,4 @@
 
 1.[github](https://github.com/ahmetihsansavas/Ileri_Programlama)
 
-2.[Autoama](https://ahmetihsansavas.github.io/otomata/)
+2.[Autoamata](https://ahmetihsansavas.github.io/otomata/)
